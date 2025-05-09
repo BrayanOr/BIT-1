@@ -1,0 +1,19 @@
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    width: 14rem;
+    height: 19rem;
+    border-radius: 10px;
+    background-color: rgb(17,17,17);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgb(35, 35, 35);
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
