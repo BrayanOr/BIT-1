@@ -1,858 +1,1751 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biker's World</title>
-    <link rel="icon" href="./assets/LOGO BW.jpg" type="image/x-icon">
+    <link
+      id="imgprincipal"
+      rel="icon"
+      href="./assets/LOGO BW.jpg"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-black fixed-top">
+        <!-- menu--------------------------------------- -->
+      <div class="container-fluid">
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            fill="white"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
 
-    
-</head>
-<body>
-    <nav class="navbar bg-black bg-black fixed-top">
-        
-        <div class="container-fluid">
-
-            
-              <button type="button" class="btn btn-link"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg></button>
-
-              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore illum alias obcaecati corrupti veritatis libero voluptatum culpa, dolores minima beatae aperiam rerum laborum, veniam repudiandae incidunt tempora sint quisquam eum?
-                </div>
+        <div
+          class="offcanvas offcanvas-top d-flex"
+          style="height: 800px"
+          tabindex="-1"
+          id="offcanvasTop"
+          aria-labelledby="offcanvasWithBothOptionsLabel"
+          data-bs-scroll="true"
+        >
+          <nav class="offcanvas-header">
+            <div>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <!-- <img
+                class="closemenu"
+                src="./assets/LOGO BW.jpg"
+                alt="Logo"
+                height="55PX"
+                width="100"
+              /> -->
+              <div>
+               <p></p>
               </div>
-
-<!-- logo --------------------------------------------- -->
-        
-            <div    class="d-inline p-2 text-bg-BLACK">
-                <button type="button" class="btn"><img src="./assets/LOGO BW.jpg" alt="logo" height="55PX" width="100"></button>
+            </div>
+          </nav>
+          <div class="offcanvas-body">
+            <div>
+              <h3>Para ti:</h3>
+              
+                
+                  <a href="#h2casco" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Cascos</a>
+                
+                  <a href="#carouselProteccion" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Proteccion</a>
+                
+                  <a href="#carouselRopa" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Ropa</a>
+                
+              
+                <h3>Para tu moto:</h3>
+                
+                  <a href="#carouselProteccionMoto" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Proteccion para tu moto</a>
+                
+                
+                  <a href="#carouselAccesorioMoto" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Accesorios para moto</a>
+                
+              
             </div>
 
+            <div>
+                <nav class="navbar bg-body-dark">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-dark" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
 
-            
-<!--  shop bag -------------------------------- -->
-            <button class="btn btn-black position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                </svg>  <span id="contadorCarrito"  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-            </button>
-
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quaerat rem possimus, dicta nulla distinctio placeat obcaecati explicabo dolore eum est eaque provident beatae odit, adipisci officiis vel labore omnis.
-                </div>
-              </div>
-
-            
-
-        
+            <div style="display: flex; display: flex; flex-direction: column;" >
+              <p>Contactanos:</p>
+              <a href="">Instagram</a>
+              <a href="">Facebook</a>
+              <a href="">Tiktok</a>
+              <a href="">Twiter</a>
+            </div>
+            <div>
+                <h6>Estamos ubicados:</h6>
+                <p>Calle 24 # 12-06</p>
+            </div>
+          </div>
         </div>
-        
+
+        <!-- logo --------------------------------------------- -->
+
+        <div class="d-inline p-2 text-bg-BLACK logobw">
+          <button type="button" class="btn logobw">
+            <a href="index.html"><img style="border-radius:34px 34px 19px 19px;"
+              src="./assets/LOGO BW.jpg"
+              alt="logo"
+              height="55PX"
+              width="100"
+            /></a>
+          </button>
+        </div>
+
+        <!--  shop bag -------------------------------- -->
+        <button
+          class="btn btn-black position-relative btn-bagcompras"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="white"
+            class="bi bi-bag-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+            />
+          </svg>
+          <span
+            id="contadorCarrito"
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          >
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            
+            <!-- <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button> -->
+          </div>
+          <div class="offcanvas-body offcbody">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">
+              Tus compras
+            </h5>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+            quaerat rem possimus, dicta nulla distinctio placeat obcaecati
+            explicabo dolore eum est eaque provident beatae odit, adipisci
+            officiis vel labore omnis.
+            
+          </div>
+        </div>
+      </div>
     </nav>
 
-
-<!-- parte1 cascos------------------------------------------------ -->
+    <!-- parte1 cascos------------------------------------------------ -->
     <div>
-        <h2 id="h2casco">Cascos</h2>
-        <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                        <div class="cards-wrapper">
-                            <div >
-                                <p>AGV K3</p>
-                                <div class="card box">
-                                    
-                                    <div class="card-body">
-                                    <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                    <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                      </svg></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>AGV K100</p>
-                                <div class="card">
-                                    <div class="card-body">
-                                    <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                    <button type="button" class="btn cbtn" onclick="agregarElemento()" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                      </svg></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div >
-                                <p>AGV K3</p>
-                                <div class="card">
-                                    
-                                    <div class="card-body">
-                                    <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                    <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                      </svg></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div >
-                                <p>AGV K3</p>
-                                <div class="card">
-                                    
-                                    <div class="card-body">
-                                    <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                    <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                      </svg></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-        <div class="carousel-item">
+      <h2 id="h2casco">Cascos</h2>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
             <div class="cards-wrapper">
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                            </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                            </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                            </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div >
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                            </svg></button>
-                            </div>
-                        </div>
-                    </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card box">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K100</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button
+                      type="button"
+                      class="btn cbtn"
+                      onclick="agregarElemento()"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper">
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        
-    </div>
-<!-- parte2 proteccion------------------------------------------------------- -->
-<div>
-    <h2>Proteccion</h2>
-    <div id="carouselProteccion" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                    <div class="cards-wrapper">
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card box">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-    <div class="carousel-item">
-        <div class="cards-wrapper">
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </div>
-            <div class="carousel-item">
-                <div class="cards-wrapper">
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                              </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                              </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                              </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                              </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselProteccion" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselProteccion" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    
-</div>
-
-<!-- parte 3 ropa -->
-
-<div>
-        <h2>Ropa</h2>
-        <div id="carouselRopa" class="carousel slide">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                        <div class="cards-wrapper">
-                            <div>
-                                <p>AGV K3</p>
-                                <div class="card">
-                                    
-                                    <div class="card-body">
-                                    <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                    <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                      </svg></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>AGV K3</p>
-                                <div class="card">
-                                    <div class="card-body">
-                                    <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                    <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                      </svg></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>AGV K3</p>
-                                <div class="card">
-                                    
-                                    <div class="card-body">
-                                    <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                    <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                      </svg></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>AGV K3</p>
-                                <div class="card">
-                                    
-                                    <div class="card-body">
-                                    <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                    <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                      </svg></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-        <div class="carousel-item">
+          </div>
+          <div class="carousel-item">
             <div class="cards-wrapper">
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                            </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                            </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                            </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                            </svg></button>
-                            </div>
-                        </div>
-                    </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper">
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="carousel-control-prev " type="button" data-bs-target="#carouselRopa" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselRopa" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
         </div>
-    
-    </div>  
-
-
-
-<!-- Seccion para tu moto-------------------- -->
- <h2 id="tumoto">Para tu moto:</h2>
-    
-<!-- Proteccion para moto -->
-
-<div>
-    <h2>Proteccion</h2>
-    <div id="carouselProteccionMoto" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                    <div class="cards-wrapper">
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-    <div class="carousel-item">
-        <div class="cards-wrapper">
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </div>
-            <div class="carousel-item">
-                <div class="cards-wrapper">
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                              </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselProteccionMoto" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselProteccionMoto" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
     </div>
-
-</div>  
-
-<!-- Proteccion para moto -->
-
-<div>
-    <h2>Proteccion</h2>
-    <div id="carouselAccesorioMoto" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                    <div class="cards-wrapper">
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>AGV K3</p>
-                            <div class="card">
-                                
-                                <div class="card-body">
-                                <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                                <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                                  </svg></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- parte2 proteccion------------------------------------------------------- -->
+    <div>
+      <h2>Proteccion</h2>
+      <div id="carouselProteccion" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card box">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-    <div class="carousel-item">
-        <div class="cards-wrapper">
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-                
-                <div>
-                    <p>AGV K3</p>
-                    <div class="card">
-                        
-                        <div class="card-body">
-                        <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                        <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg></button>
-                        </div>
-                    </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-        </div>
-    </div>
-            <div class="carousel-item">
-                <div class="cards-wrapper">
-                    <div>
-                        <p>AGV K3</p>
-                        <div class="card">
-                            
-                            <div class="card-body">
-                            <img src="./assets/cascos/casco agv.webp" class="card-img-top" alt="casco">
-                            <button type="button" class="btn cbtn" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                              </svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselAccesorioMoto" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselProteccion"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselAccesorioMoto" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselProteccion"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
     </div>
 
-</div>
+    <!-- parte 3 ropa -->
 
-      
-    
+    <div>
+      <h2>Ropa</h2>
+      <div id="carouselRopa" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselRopa"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselRopa"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Seccion para tu moto-------------------- -->
+    <h2 id="tumoto">Para tu moto:</h2>
+
+    <!-- Proteccion para moto -->
+
+    <div>
+      <h2>Proteccion para tu moto</h2>
+      <div id="carouselProteccionMoto" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselProteccionMoto"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselProteccionMoto"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Accesorios  para moto -->
+
+    <div>
+      <h2>Accesorios para tu moto</h2>
+      <div id="carouselAccesorioMoto" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div>
+                <p>AGV K3</p>
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                      src="./assets/cascos/casco agv.webp"
+                      class="card-img-top"
+                      alt="casco"
+                    />
+                    <button type="button" class="btn cbtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="white"
+                        class="bi bi-bag-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselAccesorioMoto"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselAccesorioMoto"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./JS/brain.js"></script>
-</body>
+  </body>
 </html>
