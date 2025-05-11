@@ -31,8 +31,7 @@
   }
   .box {
     position: relative;
-    z-index: 99999999;
-    
+    z-index: 99    
   }
   .carousel-inner {
     padding: 1em;
@@ -41,4 +40,41 @@
 h2 {
     display: flex;
     justify-content: center;
+}
+
+/*  sdfasd */
+
+.accordion-collapse {
+background-color: aquamarine;
+}
+
+#collapseOne {
+    background-color: black;
+}
+
+/* offcanvas */
+
+.offcanvas {
+    background-color: black;
+    color: white;
+}
+
+/* body */
+body {
+    background-color: rgb(224, 219, 212);
+}
+
+/* Ropa */
+.div-ropa {
+    margin-top: 25px;
+}
+
+#tumoto {
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+}
+
+#h2casco {
+  margin-top: 100px;
 }
