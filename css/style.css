@@ -15,10 +15,14 @@
     
   }
   
+  .cbtn {
+ margin-bottom: 80px;
+  }
+
   .card {
     height: 250px;
     width: 250px;
-    margin-right: 68px;
+    margin-right: 35px;
     box-shadow: 2px 6px 8px 0 rgb(38, 106, 38);
     border: none;
     border-radius: 15px;
