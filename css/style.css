@@ -8,15 +8,11 @@
     margin-bottom: 5%;
     border-radius: 0px;
   }
-
-  .card-title {
-    max-width: auto;
-    max-height: 5%;
-    
-  }
   
   .cbtn {
  margin-bottom: 80px;
+ position: relative;
+ z-index: 800;
   }
 
   .card {
@@ -29,10 +25,9 @@
     background-color: black;
 
   }
-  .box {
-    position: relative;
-    z-index: 99    
-  }
+
+  
+  
   .carousel-inner {
     padding: 1em;
   }
@@ -105,6 +100,27 @@ body {
   margin-left: 530px;
   border-radius: 19px;
 }
+.card {
+    height: 220px;
+    width: 160px;
+    margin-right: 10px;
+    box-shadow: 2px 6px 8px 0 rgb(38, 106, 38);
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+}
+.card-img-top {
+    height: 200px;
+    width: 130px;
+    margin-bottom: 5px;
+
+  }
+
+  .bi-bag-fill {
+    height: 25px;
+    width: 25px;
+    margin-top: -10px;
+  }
       }
 
 /* media queries df-768------------------------ */
@@ -115,6 +131,27 @@ body {
   height: 49px;
   width: 49px;
 }
+.card {
+    height: 155px;
+    width: 115px;
+    margin-right: 10px;
+    box-shadow: 2px 6px 8px 0 rgb(38, 106, 38);
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+}
+.card-img-top {
+    height: 90%;
+    width: 100%;
+    margin-bottom: 5px;
+
+  }
+
+  .bi-bag-fill {
+    height: 15px;
+    width: 15px;
+    margin-top: -15px;
+  }
         }
 
 /* media queries df-576------------------------ */
@@ -123,6 +160,32 @@ body {
   margin-left: 150px;
   border-radius: 19px;
 }
+.card {
+    height: 120px;
+    width: 90px;
+    margin-right: 10px;
+    box-shadow: 2px 6px 8px 0 rgb(38, 106, 38);
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+}
+.cbtn {
+  height: 5px;
+  width: 10px;
+}
+
+.card-img-top {
+    height: 90%;
+    width: 100%;
+    margin-bottom: 5px;
+
+  }
+
+  .bi-bag-fill {
+    height: 15px;
+    width: 15px;
+    margin-top: -15px;
+  }
       }
 
 /* media queries df-992------------------------ */
