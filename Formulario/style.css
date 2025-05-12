@@ -30,3 +30,19 @@ h2  {
 .btnenviar {
     margin-bottom: 50px;
 }
+
+@media screen and (max-width: 576px) {
+    .editform {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .container {
+        margin-top: 20px;
+    }
+    .btnenviar {
+        margin-bottom: 20px;
+    }
+}
+        margin-left: 50px;
+    }
+}
